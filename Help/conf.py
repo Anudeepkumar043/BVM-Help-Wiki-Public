@@ -5,8 +5,15 @@ project = 'EPMO'
 author = 'BVMDEV'
 
 # -- General configuration ---------------------------------------------------
-extensions = ['recommonmark']
-source_suffix = ['.rst', '.md']  # Allow both reStructuredText and Markdown
+extensions = [
+    'myst_parser',  # Replaces recommonmark for better Markdown support
+]
+
+# Allow both reStructuredText (.rst) and Markdown (.md)
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}
 
 # -- Options for HTML output -------------------------------------------------
 html_theme = 'alabaster'  # You can choose a theme of your choice
