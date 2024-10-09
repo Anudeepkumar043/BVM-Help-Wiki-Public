@@ -4,13 +4,8 @@
 project = 'EPMO'
 author = 'BVMDEV'
 
-# conf.py
-master_doc = 'index'  # Refers to index.rst or index.md
-
 # -- General configuration ---------------------------------------------------
-extensions = [
-    'myst_parser',  # Replaces recommonmark for better Markdown support
-]
+extensions = ['myst_parser']  # Use MyST-Parser for markdown support
 
 # Allow both reStructuredText (.rst) and Markdown (.md)
 source_suffix = {
@@ -18,5 +13,8 @@ source_suffix = {
     '.md': 'markdown',
 }
 
+# Set the master document (index.md)
+master_doc = 'index'  # Make sure index.md exists in the correct directory
+
 # -- Options for HTML output -------------------------------------------------
-html_theme = 'alabaster'  # You can choose a theme of your choice
+html_theme = 'alabaster'
