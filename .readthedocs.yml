@@ -1,9 +1,9 @@
 version: 2
 
 sphinx:
-  configuration: Help/conf.py
+  configuration:Help/conf.py
 
 python:
   version: 3.11
   install:
-    - requirements: Help/requirements.txt
+    - requirements:Help/requirements.txt
