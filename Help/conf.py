@@ -4,6 +4,9 @@
 project = 'EPMO'
 author = 'BVMDEV'
 
+# conf.py
+master_doc = 'index'  # Refers to index.rst or index.md
+
 # -- General configuration ---------------------------------------------------
 extensions = [
     'myst_parser',  # Replaces recommonmark for better Markdown support
