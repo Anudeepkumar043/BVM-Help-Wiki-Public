@@ -3,4 +3,5 @@
 ## This is Sample Git Doc
 
 
-Help documentation is live.
+
+Sample Doc is Live
